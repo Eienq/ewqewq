@@ -2,7 +2,6 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "np",
-  aliases: [],
   description: "Show now playing song",
   execute(message) {
     const queue = message.client.queue.get(message.guild.id);
