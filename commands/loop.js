@@ -2,7 +2,7 @@ const { canModifyQueue } = require("../util/EvobotUtil");
 
 module.exports = {
   name: "loop",
-  aliases: ['l'],
+  aliases: [],
   description: "Toggle music loop",
   execute(message) {
     const queue = message.client.queue.get(message.guild.id);
