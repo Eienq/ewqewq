@@ -9,7 +9,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
       .setTitle("CnrX Müzik BOT Yardım Menüsü")
-      .setDescription("List of all commands")
+      .setDescription("CnrX BOT Tüm Komutlar")
       .setColor("#ff000");
 
     commands.forEach((cmd) => {
