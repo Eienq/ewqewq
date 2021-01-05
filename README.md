@@ -1,10 +1,13 @@
-Merhaba sayın yolcu ben tB,
-Şaka lan şaka sa nabün iyimin bende iyiyim napam öyle takılıyom sıkılıyom vesaire neyse konuya geçek
-öncelikle bazı algılar oluşabilir bunları demek istiyom ben bu alt yapının sahibi falan değilim diğer
-youtube vidosu çeken arkadaşlar gibi bunu ben yaptım bana ait demiyorum sadece aldım editledim
-1, 2 şey ekleme ile bana ait sayılmaz, bana göre tabi neyse iyi kullanımlar koy amına koy amına
+Merhaba Ben ByCanerX Official
+
+ Bu Alt Yapı Nereden Aldığımı Gizliyorum Kusuruma Bakmayın Alt Yapı Benim Elime Geçtiğinde İngilizce iDİ Komple Türkçeleştirdim
+ Görmediğim Bir yer Varsa Google Çeviriden Çevirebilirsiniz
+ İyi Kullanımlar.
 
 
-Bu alt yapı tB tarafından paylaşılmıştır.
-[Discord Sunucumuz](https://discord.gg/h6PPBmY)
-[Youtube kanalımız](https://www.youtube.com/channel/UCPpVNTNmvRo2nHeFS1HNhTg)
+CnrX BOT Müzik BOT Alt Yapısı ByCanerX Tarafından Türkçe Çevrilmiş Ve Türk Milletine Sunulmuştur.
+
+
+[Discord Sunucum](https://discord.gg/4hVNHxWjn3)
+
+[Youtube kanalım](https://www.youtube.com/channel/UCldl8ajYEJXAcKn6XftoX3Q)
