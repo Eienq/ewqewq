@@ -19,7 +19,7 @@ const cooldowns = new Collection();
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`${PREFIX}yardım`);
+  client.user.setActivity(`CnrX Müzik BOT`);
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
