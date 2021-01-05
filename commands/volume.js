@@ -11,7 +11,7 @@ module.exports = {
     if (!canModifyQueue(message.member))
       return message.reply("önce bir ses kanalına katılmanız gerekir!").catch(console.error);
 
-    if (!args[0]) return message.reply(`🔊 The current volume is: **${queue.volume}%**`).catch(console.error);
+    if (!args[0]) return message.reply(`🔊 Mevcut Ses Düzeyi: **${queue.volume}%**`).catch(console.error);
     if (isNaN(args[0])) return message.reply("Lütfen ses seviyesini ayarlamak için bir sayı kullanın.").catch(console.error);
     if (parseInt(args[0]) > 100 || parseInt(args[0]) < 0)
       return message.reply("Ses Seviyesi Sınırı 0 - 100.").catch(console.error);
