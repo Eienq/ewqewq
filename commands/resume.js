@@ -1,20 +1,20 @@
 const { canModifyQueue } = require("../util/EvobotUtil");
 
 module.exports = {
-  name: "resume",
-  aliases: ["r"],
-  description: "Resume currently playing music",
+  name: "devam",
+  aliases: ["d"],
+  description: "Duraklatılan En Son Müziği devam ettir",
   execute(message) {
     const queue = message.client.queue.get(message.guild.id);
-    if (!queue) return message.reply("There is nothing playing.").catch(console.error);
+    if (!queue) return message.reply("Sırada Mevcut Müzik Yok.").catch(console.error);
     if (!canModifyQueue(message.member)) return;
 
     if (!queue.playing) {
       queue.playing = true;
       queue.connection.dispatcher.resume();
-      return queue.textChannel.send(`${message.author} ▶ resumed the music!`).catch(console.error);
+      return queue.textChannel.send(`${message.author} ▶ Müziği yeniden başlattı!`).catch(console.error);
     }
 
-    return message.reply("The queue is not paused.").catch(console.error);
+    return message.reply("Sıradaki Müzik Duraklatılmamış.").catch(console.error);
   }
 };
