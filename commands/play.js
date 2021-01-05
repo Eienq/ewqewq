@@ -16,7 +16,7 @@ module.exports = {
     const serverQueue = message.client.queue.get(message.guild.id);
     if (!channel) return message.reply("Önce bir ses kanalına katılmanız gerekir!").catch(console.error);
     if (serverQueue && channel !== message.guild.me.voice.channel)
-      return message.reply(`BOT İle aynı kanalda olmalısınız ${message.client.user}`).catch(console.error);
+      return message.reply(`Bot İle Aynı Kanalda Olmalısınız Veya Bir Sesli Kanala Girmelisiniz. ${message.client.user}`).catch(console.error);
 
     if (!args.length)
       return message

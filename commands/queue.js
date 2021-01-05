@@ -1,17 +1,17 @@
 const { MessageEmbed, splitMessage, escapeMarkdown } = require("discord.js");
 
 module.exports = {
-  name: "queue",
-  aliases: ["q"],
-  description: "Show the music queue and now playing.",
+  name: "sıra",
+  aliases: ["sr"],
+  description: "Müzik kuyruğunu göster ve şimdi çalıyor.",
   execute(message) {
     const queue = message.client.queue.get(message.guild.id);
-    if (!queue) return message.reply("There is nothing playing.").catch(console.error);
+    if (!queue) return message.reply("Çalan Müzik Yok.").catch(console.error);
 
     const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
 
     let queueEmbed = new MessageEmbed()
-      .setTitle("EvoBot Music Queue")
+      .setTitle("CnrX BOT Müzik Sıra Sistemi")
       .setDescription(description)
       .setColor("#F8AA2A");
 
