@@ -6,28 +6,28 @@ const youtube = new YouTubeAPI(YOUTUBE_API_KEY);
 const scdl = require("soundcloud-downloader");
 
 module.exports = {
-  name: "play",
+  name: "çal",
   cooldown: 3,
-  aliases: ["p"],
-  description: "Plays audio from YouTube or Soundcloud",
+  aliases: ["ç"],
+  description: "YouTube veya Soundcloud'dan ses çalar",
   async execute(message, args) {
     const { channel } = message.member.voice;
 
     const serverQueue = message.client.queue.get(message.guild.id);
-    if (!channel) return message.reply("You need to join a voice channel first!").catch(console.error);
+    if (!channel) return message.reply("Önce bir ses kanalına katılmanız gerekir!").catch(console.error);
     if (serverQueue && channel !== message.guild.me.voice.channel)
-      return message.reply(`You must be in the same channel as ${message.client.user}`).catch(console.error);
+      return message.reply(`BOT İle aynı kanalda olmalısınız ${message.client.user}`).catch(console.error);
 
     if (!args.length)
       return message
-        .reply(`Usage: ${message.client.prefix}play <YouTube URL | Video Name | Soundcloud URL>`)
+        .reply(`Kullanım: ${message.client.prefix}play <YouTube URL'si | Video Adı | Soundcloud URL'si>`)
         .catch(console.error);
 
     const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
-      return message.reply("Cannot connect to voice channel, missing permissions");
+      return message.reply("Ses kanalına bağlanılamıyor, izinler eksik");
     if (!permissions.has("SPEAK"))
-      return message.reply("I cannot speak in this voice channel, make sure I have the proper permissions!");
+      return message.reply("Bu ses kanalında konuşamıyorum, uygun izinlere sahip olduğumdan emin olun!");
 
     const search = args.join(" ");
     const videoPattern = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
@@ -69,7 +69,7 @@ module.exports = {
     } else if (scRegex.test(url)) {
       // It is a valid Soundcloud URL
       if (!SOUNDCLOUD_CLIENT_ID)
-        return message.reply("Missing Soundcloud Client ID in config").catch(console.error);
+        return message.reply("Yapılandırmada eksik Soundcloud İstemci Kimliği").catch(console.error);
       try {
         const trackInfo = await scdl.getInfo(url, SOUNDCLOUD_CLIENT_ID);
         song = {
@@ -78,8 +78,8 @@ module.exports = {
         };
       } catch (error) {
         if (error.statusCode === 404)
-          return message.reply("Could not find that Soundcloud track.").catch(console.error);
-        return message.reply("There was an error playing that Soundcloud track.").catch(console.error);
+          return message.reply("Bu Soundcloud parçası bulunamadı.").catch(console.error);
+        return message.reply("Bu Soundcloud parçası çalınırken bir hata oluştu.").catch(console.error);
       }
     } else {
       try {
@@ -92,14 +92,14 @@ module.exports = {
         };
       } catch (error) {
         console.error(error);
-        return message.reply("No video was found with a matching title").catch(console.error);
+        return message.reply("Eşleşen bir başlığa sahip video bulunamadı").catch(console.error);
       }
     }
 
     if (serverQueue) {
       serverQueue.songs.push(song);
       return serverQueue.textChannel
-        .send(`✅ **${song.title}** has been added to the queue by ${message.author}`)
+        .send(`✅ **${song.title}** tarafından kuyruğa eklendi ${message.author}`)
         .catch(console.error);
     }
 
@@ -114,7 +114,7 @@ module.exports = {
       console.error(error);
       message.client.queue.delete(message.guild.id);
       await channel.leave();
-      return message.channel.send(`Could not join the channel: ${error}`).catch(console.error);
+      return message.channel.send(`Kanala katılamadı: ${error}`).catch(console.error);
     }
   }
 };

@@ -1,16 +1,16 @@
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: "help",
-  aliases: ["h"],
-  description: "Display all commands and descriptions",
+  name: "yardım",
+  aliases: ["y"],
+  description: "Tüm komutları ve açıklamaları görüntüle",
   execute(message) {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-      .setTitle("Evobot Help")
+      .setTitle("CnrX Müzik BOT Yardım Menüsü")
       .setDescription("List of all commands")
-      .setColor("#F8AA2A");
+      .setColor("#ff000");
 
     commands.forEach((cmd) => {
       helpEmbed.addField(

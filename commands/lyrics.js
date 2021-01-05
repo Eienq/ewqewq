@@ -4,10 +4,10 @@ const lyricsFinder = require("lyrics-finder");
 module.exports = {
   name: "lyrics",
   aliases: ["ly"],
-  description: "Get lyrics for the currently playing song",
+  description: "Şu anda çalan şarkının sözlerini alın",
   async execute(message) {
     const queue = message.client.queue.get(message.guild.id);
-    if (!queue) return message.channel.send("There is nothing playing.").catch(console.error);
+    if (!queue) return message.channel.send("Çalan Müzik Yok.").catch(console.error);
 
     let lyrics = null;
 
@@ -18,7 +18,7 @@ module.exports = {
     }
 
     let lyricsEmbed = new MessageEmbed()
-      .setTitle("Lyrics")
+      .setTitle("Lyrics Stidüo")
       .setDescription(lyrics)
       .setColor("#F8AA2A")
       .setTimestamp();
