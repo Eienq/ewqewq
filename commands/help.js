@@ -8,8 +8,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-      .setTitle("CnrX Müzik BOT Yardım Menüsü")
-      .setDescription("CnrX BOT Tüm Komutlar")
+      .setTitle("Wings Müzik BOT Yardım Menüsü")
+      .setDescription("Wings BOT Tüm Komutlar")
       .setColor("#ff000");
 
     commands.forEach((cmd) => {
