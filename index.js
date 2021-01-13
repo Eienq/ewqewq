@@ -19,31 +19,34 @@ const cooldowns = new Collection();
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`CnrX Müzik BOT`);
+  client.user.setActivity(`Wings Müzik BOT`);
 });
-client.on("warn", (info) => console.log(info));
+client.on("warn", info => console.log(info));
 client.on("error", console.error);
 
 /**
  * Import all commands
  */
-const commandFiles = readdirSync(join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
+const commandFiles = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith(".js"));
 for (const file of commandFiles) {
   const command = require(join(__dirname, "commands", `${file}`));
   client.commands.set(command.name, command);
 }
 
-client.on("message", async (message) => {
+client.on("message", async message => {
   if (message.author.bot) return;
   if (!message.guild) return;
 
   if (message.content.startsWith(PREFIX)) {
-    const args = message.content.slice(PREFIX.length).trim().split(/ +/);
+    const args = message.content
+      .slice(PREFIX.length)
+      .trim()
+      .split(/ +/);
     const commandName = args.shift().toLowerCase();
 
     const command =
       client.commands.get(commandName) ||
-      client.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
+      client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
     if (!command) return;
 
