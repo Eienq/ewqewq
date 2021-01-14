@@ -19,7 +19,7 @@ const cooldowns = new Collection();
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`Wings Müzik BOT`);
+  client.user.setActivity(`r!yardım r!davet`);
 });
 client.on("warn", info => console.log(info));
 client.on("error", console.error);
