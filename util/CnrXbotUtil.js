@@ -4,7 +4,7 @@ module.exports = {
     const botChannel = member.guild.me.voice.channel;
 
     if (channel !== botChannel) {
-      member.send("Yönce ses kanalına katılmalısın!").catch(console.error);
+      member.send("Önce ses kanalına katılmalısın!").catch(console.error);
       return false;
     }
 
