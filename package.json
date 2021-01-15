@@ -1,7 +1,7 @@
 {
   "name": "evobot",
   "version": "0.6.1",
-  "description": "Discord music bot built with discord.js",
+  "description": "Discord Erdem music ",
   "main": "index.js",
   "author": "Erit Islami <eritislami@gmail.com>",
   "private": true,
