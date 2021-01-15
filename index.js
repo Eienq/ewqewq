@@ -16,7 +16,7 @@ const cooldowns = new Collection();
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`e!çal ❤️ Muzik Çalar`,`Muzik Botu`);
+  client.user.setActivity(`e!çal ❤️ Muzik Çalar`,`Muzik Botu ❤️ 7/24`);
 });
 client.on("warn", info => console.log(info));
 client.on("error", console.error);
