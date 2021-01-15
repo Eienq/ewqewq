@@ -1,4 +1,4 @@
-const { canModifyQueue } = require("../util/CnrXbotUtil");
+const { canModifyQueue } = require("../util/muzikutil");
 
 
 module.exports = {

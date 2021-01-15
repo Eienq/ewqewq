@@ -1,6 +1,3 @@
-/**
- * Module Imports
- */
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
@@ -8,7 +5,7 @@ const { TOKEN, PREFIX } = require("./config.json");
 
 const client = new Client({ disableMentions: "everyone" });
 
-client.login(process.env.token);
+client.login(process.ayarlar.token);
 client.commands = new Collection();
 client.prefix = PREFIX;
 client.queue = new Map();
@@ -19,7 +16,7 @@ const cooldowns = new Collection();
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`r!yardım r!davet`);
+  client.user.setActivity(`e!çal`);
 });
 client.on("warn", info => console.log(info));
 client.on("error", console.error);
