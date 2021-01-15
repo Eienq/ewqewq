@@ -18,7 +18,7 @@ module.exports = {
     }
 
     let lyricsEmbed = new MessageEmbed()
-      .setTitle("Lyrics Stidüo")
+      .setTitle("Erdem Muzik")
       .setDescription(lyrics)
       .setColor("#F8AA2A")
       .setTimestamp();

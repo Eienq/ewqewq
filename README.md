@@ -1,13 +1,10 @@
-Merhaba Ben ByCanerX Official
+**// Merhaba Ben Erdem Çakıroğlu //**
 
- Bu Alt Yapı Nereden Aldığımı Gizliyorum Kusuruma Bakmayın Alt Yapı Benim Elime Geçtiğinde İngilizce iDİ Komple Türkçeleştirdim
- Görmediğim Bir yer Varsa Google Çeviriden Çevirebilirsiniz
- İyi Kullanımlar.
-
-
-CnrX BOT Müzik BOT Alt Yapısı ByCanerX Tarafından Türkçe Çevrilmiş Ve Türk Milletine Sunulmuştur.
+YouTube Kanalıma Hayla Abone Olmadıysanız Lütfen Aşağıdan Kanalıma Abone Olun 
+Bu Altyapı İçin Çok Uğraştık Sadece Emeğimin Karşılığını Almak İstiyorum 
+Keyifli Muzik Dinlemeler.
 
 
-[Discord Sunucum](https://discord.gg/4hVNHxWjn3)
+[Discord Sunucum](https://discord.gg/fsqnmYrcB8)
 
-[Youtube kanalım](https://www.youtube.com/channel/UCldl8ajYEJXAcKn6XftoX3Q)
+[Youtube kanalım](https://www.youtube.com/erdemçakıroğlu)

@@ -11,7 +11,7 @@ module.exports = {
     const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
 
     let queueEmbed = new MessageEmbed()
-      .setTitle("CnrX BOT Müzik Sıra Sistemi")
+      .setTitle("Erdem Muzik Müzik Sıra Sistemi")
       .setDescription(description)
       .setColor("#F8AA2A");
 
