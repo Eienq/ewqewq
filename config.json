@@ -3,6 +3,5 @@
   "SOUNDCLOUD_CLIENT_ID": "SOUNDLCOUD CLİENT KEY",
   "MAX_PLAYLIST_SIZE": 10,
   "PREFIX": "e!",
-  "PRUNING": false,
-  "TOKEN": "NzMzNTkzNDkyMjE1MDM3OTg0.XxFaLg.3i4Sd-_tIC42UlykqsqHOgKG9ug"
+  "PRUNING": false
 }

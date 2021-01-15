@@ -5,7 +5,7 @@ dependencies:
   lyrics-finder: 19.2.0
   simple-youtube-api: 5.2.1
   soundcloud-downloader: 0.0.9
-  ytdl-core: 4.4.0
+  ytdl-core: 4.4.3
   ytdl-core-discord: 1.2.5
 packages:
   /@babel/runtime/7.10.4:
@@ -819,6 +819,16 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-9ceiEL5iM0OULciBySzoZA91YyxqnlHd3aeqf5r3S8rNgPGLDn11fJeEsKO1jQ1t/eYO1dK4zTkrIH7S497cyg==
+  /ytdl-core/4.4.3:
+    dependencies:
+      m3u8stream: 0.8.3
+      miniget: 4.1.0
+      sax: 1.2.4
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-0GexY2dMk0pvIE0UAB5GPiyaNjiawqDi5eUCUHW7CP1ZNyEco8Lct8/3AsI6aO0EQLGK774ocDvWxOE7W0qrTg==
   github.com/derhuerst/http-basic/482ee5c23cbd8e51965d8d7d9b30d0345cc3e82b:
     dependencies:
       caseless: 0.12.0
@@ -830,6 +840,7 @@ packages:
       node: '>=6.0.0'
     name: http-basic
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/derhuerst/http-basic/tar.gz/482ee5c23cbd8e51965d8d7d9b30d0345cc3e82b'
     version: 8.2.0
 registry: 'https://registry.npmjs.org/'
@@ -842,5 +853,5 @@ specifiers:
   lyrics-finder: ^19.0.21
   simple-youtube-api: ^5.2.1
   soundcloud-downloader: 0.0.9
-  ytdl-core: ^4.4.0
+  ytdl-core: ^4.4.3
   ytdl-core-discord: ^1.2.5

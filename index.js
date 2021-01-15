@@ -5,7 +5,7 @@ const { TOKEN, PREFIX } = require("./config.json");
 
 const client = new Client({ disableMentions: "everyone" });
 
-client.login(config.process.TOKEN);
+client.login(process.env.TOKEN);
 client.commands = new Collection();
 client.prefix = PREFIX;
 client.queue = new Map();
@@ -16,7 +16,7 @@ const cooldowns = new Collection();
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`e!çal`);
+  client.user.setActivity(`e!çal ❤️ Muzik Çalar`,`Muzik Botu`);
 });
 client.on("warn", info => console.log(info));
 client.on("error", console.error);
